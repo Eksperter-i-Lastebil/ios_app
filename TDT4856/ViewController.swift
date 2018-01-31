@@ -3,16 +3,21 @@ import SwiftSocket
 import SwiftLocation
 import Foundation
 import SwiftHTTP
+import CoreLocation
 
 class ViewController: UIViewController
 {
     @IBOutlet weak var btn_enable: UIButton!
-    let host = "10.22.78.203"
+    @IBOutlet weak var modus_txt: UITextField!
+    @IBOutlet weak var id_txt: UITextField!
     
     let port = 80
     let interval = 2
     var data = ""
     var SwiftTimer = Timer()
+    //var host = "http://10.22.73.85:5000/events"
+    //var host = "https://requestb.in/zs4kvtzs"
+    var host = "http://10.22.78.203:80"
     
     struct Response: Codable
     {
@@ -24,20 +29,7 @@ class ViewController: UIViewController
     {
         btn_enable.backgroundColor = UIColor.FlatColor.Blue.Mariner
         super.viewDidLoad()
-    }
-    
-    func send_http()
-    {
-        let params = [data]
-         HTTP.POST("https://requestb.in/rsnod6rs:80", parameters: params)
-       { response in
-            //do things...
-       }
-        
-        //HTTP.POST("http://10.22.70.161:5000", parameters: params)
-        //{ response in
-       //     //do things...
-       // }
+        get_location()
     }
     
     override func didReceiveMemoryWarning()
@@ -61,25 +53,38 @@ class ViewController: UIViewController
         }
     }
     
-    @objc func get_location()
+    func get_location()
     {
-        Locator.requestAuthorizationIfNeeded(.always)
+        //Locator.requestAuthorizationIfNeeded(.always)
+        self.modus_txt.text = "test"
+        //let params = ["Lat": "hello world"] as [String : Any]
+        //HTTP.POST(self.host, parameters: params)
+        //{ response in
+        //}
+
         Locator.currentPosition(accuracy: .room, onSuccess: { loc in
             //print("Find location \(loc)")
             self.data = ("\(loc.coordinate.latitude),\(loc.coordinate.longitude),\(Int32(loc.timestamp.timeIntervalSince1970.rounded())) \n")
+       
+            let params = ["Lat": loc.coordinate.latitude, "Long": loc.coordinate.longitude, "time": loc.timestamp.timeIntervalSince1970.rounded(), "type": self.modus_txt.text as Any, "id": self.id_txt.text as Any] as [String : Any]
             
-            let params = ["Lat": loc.coordinate.latitude, "Long": loc.coordinate.longitude, "time": loc.timestamp.timeIntervalSince1970.rounded(), "type": "ploging", "id": "#53"] as [String : Any]
-            HTTP.POST("https://requestb.in/rsnod6rs", parameters: params) { response in
-            }
+            //HTTP.POST(self.host, parameters: params)
+            //{ response in
+             //   print(response)
+            //}
         }) { err, _ in
             print("\(err)")
+            self.modus_txt.text = "\(err)"
         }
         print(data)
     }
     
     func start_timer()
     {
-        SwiftTimer = Timer.scheduledTimer(timeInterval: Double(interval), target:self, selector: #selector(get_location), userInfo: nil, repeats: true)
+        //SwiftTimer = Timer.scheduledTimer(timeInterval: Double(interval), target:self, selector: #selector(get_location), userInfo: nil, repeats: true)
+            self.SwiftTimer = Timer.scheduledTimer(withTimeInterval: 2, repeats: true, block: { _ in
+                self.get_location()
+            })
     }
     
     func stop_timer()
