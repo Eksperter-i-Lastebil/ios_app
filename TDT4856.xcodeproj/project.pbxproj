@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		487B9983EC462E6FD8270152 /* Pods_TDT4856.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D9B95A707A5D321813889F /* Pods_TDT4856.framework */; };
+		7F730D5020109F270012D8D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F730D4F20109F270012D8D0 /* AppDelegate.swift */; };
+		7F730D5220109F270012D8D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F730D5120109F270012D8D0 /* ViewController.swift */; };
+		7F730D5520109F270012D8D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F730D5320109F270012D8D0 /* Main.storyboard */; };
+		7F730D5720109F270012D8D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F730D5620109F270012D8D0 /* Assets.xcassets */; };
+		7F730D5A20109F270012D8D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F730D5820109F270012D8D0 /* LaunchScreen.storyboard */; };
+		7F730D6520109F270012D8D0 /* TDT4856Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F730D6420109F270012D8D0 /* TDT4856Tests.swift */; };
+		7F730D7020109F280012D8D0 /* TDT4856UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F730D6F20109F280012D8D0 /* TDT4856UITests.swift */; };
+		7F7A63662010A74B00DBCCF8 /* custom_colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7A63652010A74B00DBCCF8 /* custom_colors.swift */; };
+		7FAD9781201202A900DDAD1C /* circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAD9780201202A900DDAD1C /* circle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F730D6120109F270012D8D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F730D4420109F270012D8D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F730D4B20109F270012D8D0;
+			remoteInfo = TDT4856;
+		};
+		7F730D6C20109F280012D8D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F730D4420109F270012D8D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F730D4B20109F270012D8D0;
+			remoteInfo = TDT4856;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2237DBB79A7BBA1E3556CCDD /* Pods-TDT4856.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDT4856.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TDT4856/Pods-TDT4856.debug.xcconfig"; sourceTree = "<group>"; };
+		47770B100272664F715BD149 /* Pods-TDT4856.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDT4856.release.xcconfig"; path = "Pods/Target Support Files/Pods-TDT4856/Pods-TDT4856.release.xcconfig"; sourceTree = "<group>"; };
+		63D9B95A707A5D321813889F /* Pods_TDT4856.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TDT4856.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F730D4C20109F270012D8D0 /* TDT4856.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDT4856.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F730D4F20109F270012D8D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7F730D5120109F270012D8D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7F730D5420109F270012D8D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7F730D5620109F270012D8D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F730D5920109F270012D8D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7F730D5B20109F270012D8D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F730D6020109F270012D8D0 /* TDT4856Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDT4856Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F730D6420109F270012D8D0 /* TDT4856Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDT4856Tests.swift; sourceTree = "<group>"; };
+		7F730D6620109F270012D8D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F730D6B20109F280012D8D0 /* TDT4856UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDT4856UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F730D6F20109F280012D8D0 /* TDT4856UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDT4856UITests.swift; sourceTree = "<group>"; };
+		7F730D7120109F280012D8D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F7A63652010A74B00DBCCF8 /* custom_colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = custom_colors.swift; sourceTree = "<group>"; };
+		7FAD9780201202A900DDAD1C /* circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = circle.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F730D4920109F270012D8D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				487B9983EC462E6FD8270152 /* Pods_TDT4856.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F730D5D20109F270012D8D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F730D6820109F270012D8D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18827AE9676DF326FE462213 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2237DBB79A7BBA1E3556CCDD /* Pods-TDT4856.debug.xcconfig */,
+				47770B100272664F715BD149 /* Pods-TDT4856.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7F730D4320109F270012D8D0 = {
+			isa = PBXGroup;
+			children = (
+				7F730D4E20109F270012D8D0 /* TDT4856 */,
+				7F730D6320109F270012D8D0 /* TDT4856Tests */,
+				7F730D6E20109F280012D8D0 /* TDT4856UITests */,
+				7F730D4D20109F270012D8D0 /* Products */,
+				18827AE9676DF326FE462213 /* Pods */,
+				F35B64FF0E5B3DA6B3E9ED5C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7F730D4D20109F270012D8D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F730D4C20109F270012D8D0 /* TDT4856.app */,
+				7F730D6020109F270012D8D0 /* TDT4856Tests.xctest */,
+				7F730D6B20109F280012D8D0 /* TDT4856UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F730D4E20109F270012D8D0 /* TDT4856 */ = {
+			isa = PBXGroup;
+			children = (
+				7F730D4F20109F270012D8D0 /* AppDelegate.swift */,
+				7F730D5120109F270012D8D0 /* ViewController.swift */,
+				7F7A63652010A74B00DBCCF8 /* custom_colors.swift */,
+				7FAD9780201202A900DDAD1C /* circle.swift */,
+				7F730D5320109F270012D8D0 /* Main.storyboard */,
+				7F730D5620109F270012D8D0 /* Assets.xcassets */,
+				7F730D5820109F270012D8D0 /* LaunchScreen.storyboard */,
+				7F730D5B20109F270012D8D0 /* Info.plist */,
+			);
+			path = TDT4856;
+			sourceTree = "<group>";
+		};
+		7F730D6320109F270012D8D0 /* TDT4856Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7F730D6420109F270012D8D0 /* TDT4856Tests.swift */,
+				7F730D6620109F270012D8D0 /* Info.plist */,
+			);
+			path = TDT4856Tests;
+			sourceTree = "<group>";
+		};
+		7F730D6E20109F280012D8D0 /* TDT4856UITests */ = {
+			isa = PBXGroup;
+			children = (
+				7F730D6F20109F280012D8D0 /* TDT4856UITests.swift */,
+				7F730D7120109F280012D8D0 /* Info.plist */,
+			);
+			path = TDT4856UITests;
+			sourceTree = "<group>";
+		};
+		F35B64FF0E5B3DA6B3E9ED5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63D9B95A707A5D321813889F /* Pods_TDT4856.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F730D4B20109F270012D8D0 /* TDT4856 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F730D7420109F280012D8D0 /* Build configuration list for PBXNativeTarget "TDT4856" */;
+			buildPhases = (
+				F4DEF345BA9D889FE6504BEA /* [CP] Check Pods Manifest.lock */,
+				7F730D4820109F270012D8D0 /* Sources */,
+				7F730D4920109F270012D8D0 /* Frameworks */,
+				7F730D4A20109F270012D8D0 /* Resources */,
+				1F70AD8C4211CC6A93E55679 /* [CP] Embed Pods Frameworks */,
+				F1770C3B0D775158BA9BBB6A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TDT4856;
+			productName = TDT4856;
+			productReference = 7F730D4C20109F270012D8D0 /* TDT4856.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F730D5F20109F270012D8D0 /* TDT4856Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F730D7720109F280012D8D0 /* Build configuration list for PBXNativeTarget "TDT4856Tests" */;
+			buildPhases = (
+				7F730D5C20109F270012D8D0 /* Sources */,
+				7F730D5D20109F270012D8D0 /* Frameworks */,
+				7F730D5E20109F270012D8D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F730D6220109F270012D8D0 /* PBXTargetDependency */,
+			);
+			name = TDT4856Tests;
+			productName = TDT4856Tests;
+			productReference = 7F730D6020109F270012D8D0 /* TDT4856Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7F730D6A20109F270012D8D0 /* TDT4856UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F730D7A20109F280012D8D0 /* Build configuration list for PBXNativeTarget "TDT4856UITests" */;
+			buildPhases = (
+				7F730D6720109F270012D8D0 /* Sources */,
+				7F730D6820109F270012D8D0 /* Frameworks */,
+				7F730D6920109F270012D8D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F730D6D20109F280012D8D0 /* PBXTargetDependency */,
+			);
+			name = TDT4856UITests;
+			productName = TDT4856UITests;
+			productReference = 7F730D6B20109F280012D8D0 /* TDT4856UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F730D4420109F270012D8D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = TDT4856;
+				TargetAttributes = {
+					7F730D4B20109F270012D8D0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					7F730D5F20109F270012D8D0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7F730D4B20109F270012D8D0;
+					};
+					7F730D6A20109F270012D8D0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7F730D4B20109F270012D8D0;
+					};
+				};
+			};
+			buildConfigurationList = 7F730D4720109F270012D8D0 /* Build configuration list for PBXProject "TDT4856" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F730D4320109F270012D8D0;
+			productRefGroup = 7F730D4D20109F270012D8D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F730D4B20109F270012D8D0 /* TDT4856 */,
+				7F730D5F20109F270012D8D0 /* TDT4856Tests */,
+				7F730D6A20109F270012D8D0 /* TDT4856UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F730D4A20109F270012D8D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F730D5A20109F270012D8D0 /* LaunchScreen.storyboard in Resources */,
+				7F730D5720109F270012D8D0 /* Assets.xcassets in Resources */,
+				7F730D5520109F270012D8D0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F730D5E20109F270012D8D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F730D6920109F270012D8D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F70AD8C4211CC6A93E55679 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TDT4856/Pods-TDT4856-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftHTTP/SwiftHTTP.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftLocation/SwiftLocation.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSocket/SwiftSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHTTP.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftLocation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TDT4856/Pods-TDT4856-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1770C3B0D775158BA9BBB6A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TDT4856/Pods-TDT4856-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4DEF345BA9D889FE6504BEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TDT4856-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F730D4820109F270012D8D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F730D5220109F270012D8D0 /* ViewController.swift in Sources */,
+				7FAD9781201202A900DDAD1C /* circle.swift in Sources */,
+				7F7A63662010A74B00DBCCF8 /* custom_colors.swift in Sources */,
+				7F730D5020109F270012D8D0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F730D5C20109F270012D8D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F730D6520109F270012D8D0 /* TDT4856Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F730D6720109F270012D8D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F730D7020109F280012D8D0 /* TDT4856UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F730D6220109F270012D8D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F730D4B20109F270012D8D0 /* TDT4856 */;
+			targetProxy = 7F730D6120109F270012D8D0 /* PBXContainerItemProxy */;
+		};
+		7F730D6D20109F280012D8D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F730D4B20109F270012D8D0 /* TDT4856 */;
+			targetProxy = 7F730D6C20109F280012D8D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F730D5320109F270012D8D0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F730D5420109F270012D8D0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7F730D5820109F270012D8D0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F730D5920109F270012D8D0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F730D7220109F280012D8D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7F730D7320109F280012D8D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F730D7520109F280012D8D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2237DBB79A7BBA1E3556CCDD /* Pods-TDT4856.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J6U67RDDH8;
+				INFOPLIST_FILE = TDT4856/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TDT4856.TDT4856;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F730D7620109F280012D8D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47770B100272664F715BD149 /* Pods-TDT4856.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J6U67RDDH8;
+				INFOPLIST_FILE = TDT4856/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TDT4856.TDT4856;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7F730D7820109F280012D8D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TDT4856Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TDT4856.TDT4856Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDT4856.app/TDT4856";
+			};
+			name = Debug;
+		};
+		7F730D7920109F280012D8D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TDT4856Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TDT4856.TDT4856Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDT4856.app/TDT4856";
+			};
+			name = Release;
+		};
+		7F730D7B20109F280012D8D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TDT4856UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TDT4856.TDT4856UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TDT4856;
+			};
+			name = Debug;
+		};
+		7F730D7C20109F280012D8D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TDT4856UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TDT4856.TDT4856UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TDT4856;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F730D4720109F270012D8D0 /* Build configuration list for PBXProject "TDT4856" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F730D7220109F280012D8D0 /* Debug */,
+				7F730D7320109F280012D8D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F730D7420109F280012D8D0 /* Build configuration list for PBXNativeTarget "TDT4856" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F730D7520109F280012D8D0 /* Debug */,
+				7F730D7620109F280012D8D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F730D7720109F280012D8D0 /* Build configuration list for PBXNativeTarget "TDT4856Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F730D7820109F280012D8D0 /* Debug */,
+				7F730D7920109F280012D8D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F730D7A20109F280012D8D0 /* Build configuration list for PBXNativeTarget "TDT4856UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F730D7B20109F280012D8D0 /* Debug */,
+				7F730D7C20109F280012D8D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F730D4420109F270012D8D0 /* Project object */;
+}
