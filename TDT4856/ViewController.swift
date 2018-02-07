@@ -14,10 +14,14 @@ class ViewController: UIViewController
     let port = 80
     let interval = 2
     var data = ""
+    var prev_long = 0.0
+    var prev_lat = 0.0
+    var long = 0.0
+    var lat = 0.0
     var SwiftTimer = Timer()
-    //var host = "http://10.22.73.85:5000/events"
-    //var host = "https://requestb.in/zs4kvtzs"
-    var host = "http://10.22.78.203:80"
+    var host = "http://10.24.33.107:5000/events"
+    //var host = "https://requestb.in/ussk9ous"
+    //var host = "http://10.22.79.10"
     
     struct Response: Codable
     {
@@ -29,7 +33,6 @@ class ViewController: UIViewController
     {
         btn_enable.backgroundColor = UIColor.FlatColor.Blue.Mariner
         super.viewDidLoad()
-        get_location()
     }
     
     override func didReceiveMemoryWarning()
@@ -55,33 +58,43 @@ class ViewController: UIViewController
     
     func get_location()
     {
-        //Locator.requestAuthorizationIfNeeded(.always)
-        self.modus_txt.text = "test"
-        //let params = ["Lat": "hello world"] as [String : Any]
-        //HTTP.POST(self.host, parameters: params)
-        //{ response in
-        //}
-
         Locator.currentPosition(accuracy: .room, onSuccess: { loc in
-            //print("Find location \(loc)")
             self.data = ("\(loc.coordinate.latitude),\(loc.coordinate.longitude),\(Int32(loc.timestamp.timeIntervalSince1970.rounded())) \n")
-       
-            let params = ["Lat": loc.coordinate.latitude, "Long": loc.coordinate.longitude, "time": loc.timestamp.timeIntervalSince1970.rounded(), "type": self.modus_txt.text as Any, "id": self.id_txt.text as Any] as [String : Any]
-            
-            //HTTP.POST(self.host, parameters: params)
-            //{ response in
-             //   print(response)
-            //}
+            self.lat = loc.coordinate.latitude
+            self.long = loc.coordinate.longitude
+            let params = ["lat": loc.coordinate.latitude, "lng": loc.coordinate.longitude, "time": loc.timestamp.timeIntervalSince1970.rounded(), "type": self.modus_txt.text as Any, "id": self.id_txt.text as Any] as [String : Any]
+     
+            if(self.lat == self.prev_lat)
+            {
+                //print("Duplicate coords!")
+            }
+            else if(self.long == self.prev_long)
+            {
+                //print("Duplicate coords!")
+            }
+            else
+            {
+                print(params)
+                HTTP.POST(self.host, parameters: params)
+                { response in
+                    //print(response)
+                }
+            }
         }) { err, _ in
-            print("\(err)")
-            self.modus_txt.text = "\(err)"
+            //print("\(err)")
         }
-        print(data)
+        
+        self.prev_long = long
+        self.prev_lat = lat
+    }
+    
+    func check_duplicate()
+    {
+        
     }
     
     func start_timer()
     {
-        //SwiftTimer = Timer.scheduledTimer(timeInterval: Double(interval), target:self, selector: #selector(get_location), userInfo: nil, repeats: true)
             self.SwiftTimer = Timer.scheduledTimer(withTimeInterval: 2, repeats: true, block: { _ in
                 self.get_location()
             })
@@ -90,24 +103,6 @@ class ViewController: UIViewController
     func stop_timer()
     {
         SwiftTimer.invalidate()
-    }
-    
-    func send_data()
-    {
-        //send_http()
-        //switch client?.send(string: data) {
-        //case .success?:
-        //    guard let data = client?.read(1024*10) else { return }
-            
-        //    if let response = String(bytes: data, encoding: .utf8)
-        //    {
-        //        //print(response)
-        //    }
-        //case .failure(let error)?:
-        //    print(error)
-        //
-        //    default: break
-        //}
     }
 }
 
